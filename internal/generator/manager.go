@@ -17,6 +17,7 @@ func NewManager() *Manager {
 	s.registerGenerator("enum", NewEnum)
 	s.registerGenerator("static", NewStatic)
 	s.registerGenerator("uuid", NewUUID)
+	s.registerGenerator("date", NewDate)
 	return s
 }
 

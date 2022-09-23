@@ -183,6 +183,19 @@ do not have
 * **lists (optional)**  
   Initial value of the sequence number to generate.
 
+### date
+A generator that generates random date.
+#### params
+* **min**  
+  Lower bound for generated values.  
+  Accepted formats are: [2006-01-02T15:04:05 MST](https://pkg.go.dev/time#Time.Format)
+* **max**  
+  Maximum value to generate.  
+  Accepted formats are: [2006-01-02T15:04:05 MST](https://pkg.go.dev/time#Time.Format)
+* **format (Optional, default: "2006-01-02 15:04:05")**  
+  Specifies the format of the output date.  
+  See the [golang documentation](https://pkg.go.dev/time#Time.Format) for the format.
+
 ## Now available writers
 
 ### sql

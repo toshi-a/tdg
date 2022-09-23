@@ -73,6 +73,16 @@
       }
     },
     {
+      "name": "random_date",
+      "generator": "date",
+      "quote": true,
+      "params": {
+        "min": "1980-01-01T00:00:00 UTC",
+        "max": "2022-12-31T00:00:00 UTC",
+        "format": "2006-01-02 15:04:05 MST"
+      }
+    },
+    {
       "name": "created_at",
       "generator": "static",
       "params": {
