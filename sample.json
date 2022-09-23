@@ -1,0 +1,96 @@
+{
+  "items": [
+    {
+      "name": "id",
+      "generator": "sequential",
+      "params": {}
+    },
+    {
+      "name": "uuid",
+      "generator": "uuid",
+      "quote": true,
+      "params": {}
+    },
+    {
+      "name": "seq_int_digit5",
+      "generator": "sequential",
+      "quote": true,
+      "params": {
+        "digit": 5
+      }
+    },
+    {
+      "name": "seq_int_initial100",
+      "generator": "sequential",
+      "params": {
+        "initial": 100
+      }
+    },
+    {
+      "name": "enum_list",
+      "generator": "enum",
+      "params": {
+        "list": ["true", "false"]
+      }
+    },
+    {
+      "name": "name",
+      "generator": "enum",
+      "quote": true,
+      "params": {
+        "lists": [
+          ["names", "of", "firstnames"],
+          ["names", "of", "lastnames"]
+        ]
+      }
+    },
+    {
+      "name": "address",
+      "generator": "enum",
+      "quote": true,
+      "params": {
+        "lists":[
+          ["list", "of", "streets"],
+          ["list", "of", "states"],
+          ["list", "of", "countries"]
+        ]
+      }
+    },
+    {
+      "name": "random_int",
+      "generator": "integer",
+      "params": {
+        "min": 10,
+        "max": 100
+      }
+    },
+    {
+      "name": "num",
+      "generator": "integer",
+      "params": {
+        "min": 1,
+        "max": 1000
+      }
+    },
+    {
+      "name": "created_at",
+      "generator": "static",
+      "params": {
+        "value": "NOW()"
+      }
+    },
+    {
+      "name": "modified_at",
+      "generator": "static",
+      "params": {
+        "value": "NOW()"
+      }
+    }
+  ],
+  "output": {
+    "writer": "sql",
+    "params": {
+      "table_name": "table1"
+    }
+  }
+}
